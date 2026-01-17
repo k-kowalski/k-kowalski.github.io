@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <style>
+      .mesh-line { 
+        fill: none; 
+        stroke: #8b5cf6; 
+        stroke-width: 0.5; 
+      }
+    </style>
+  </defs>
+  <g class="triangle-mesh">
+    <!-- Row 1 -->
+    <polygon class="mesh-line" points="0,0 160,0 80,90"/>
+    <polygon class="mesh-line" points="160,0 320,0 240,90"/>
+    <polygon class="mesh-line" points="320,0 480,0 400,90"/>
+    <polygon class="mesh-line" points="480,0 640,0 560,90"/>
+    <polygon class="mesh-line" points="640,0 800,0 720,90"/>
+    <polygon class="mesh-line" points="800,0 960,0 880,90"/>
+    <polygon class="mesh-line" points="960,0 1120,0 1040,90"/>
+    <polygon class="mesh-line" points="1120,0 1280,0 1200,90"/>
+    <polygon class="mesh-line" points="1280,0 1440,0 1360,90"/>
+    <polygon class="mesh-line" points="1440,0 1600,0 1520,90"/>
+    <polygon class="mesh-line" points="1600,0 1760,0 1680,90"/>
+    <polygon class="mesh-line" points="1760,0 1920,0 1840,90"/>
+    
+    <!-- Row 2 inverted -->
+    <polygon class="mesh-line" points="0,0 80,90 0,180"/>
+    <polygon class="mesh-line" points="80,90 160,0 160,180"/>
+    <polygon class="mesh-line" points="160,0 240,90 160,180"/>
+    <polygon class="mesh-line" points="240,90 320,0 320,180"/>
+    <polygon class="mesh-line" points="320,0 400,90 320,180"/>
+    <polygon class="mesh-line" points="400,90 480,0 480,180"/>
+    <polygon class="mesh-line" points="480,0 560,90 480,180"/>
+    <polygon class="mesh-line" points="560,90 640,0 640,180"/>
+    <polygon class="mesh-line" points="640,0 720,90 640,180"/>
+    <polygon class="mesh-line" points="720,90 800,0 800,180"/>
+    <polygon class="mesh-line" points="800,0 880,90 800,180"/>
+    <polygon class="mesh-line" points="880,90 960,0 960,180"/>
+    <polygon class="mesh-line" points="960,0 1040,90 960,180"/>
+    <polygon class="mesh-line" points="1040,90 1120,0 1120,180"/>
+    <polygon class="mesh-line" points="1120,0 1200,90 1120,180"/>
+    <polygon class="mesh-line" points="1200,90 1280,0 1280,180"/>
+    <polygon class="mesh-line" points="1280,0 1360,90 1280,180"/>
+    <polygon class="mesh-line" points="1360,90 1440,0 1440,180"/>
+    <polygon class="mesh-line" points="1440,0 1520,90 1440,180"/>
+    <polygon class="mesh-line" points="1520,90 1600,0 1600,180"/>
+    <polygon class="mesh-line" points="1600,0 1680,90 1600,180"/>
+    <polygon class="mesh-line" points="1680,90 1760,0 1760,180"/>
+    <polygon class="mesh-line" points="1760,0 1840,90 1760,180"/>
+    <polygon class="mesh-line" points="1840,90 1920,0 1920,180"/>
+    
+    <!-- Row 3 -->
+    <polygon class="mesh-line" points="0,180 160,180 80,270"/>
+    <polygon class="mesh-line" points="160,180 320,180 240,270"/>
+    <polygon class="mesh-line" points="320,180 480,180 400,270"/>
+    <polygon class="mesh-line" points="480,180 640,180 560,270"/>
+    <polygon class="mesh-line" points="640,180 800,180 720,270"/>
+    <polygon class="mesh-line" points="800,180 960,180 880,270"/>
+    <polygon class="mesh-line" points="960,180 1120,180 1040,270"/>
+    <polygon class="mesh-line" points="1120,180 1280,180 1200,270"/>
+    <polygon class="mesh-line" points="1280,180 1440,180 1360,270"/>
+    <polygon class="mesh-line" points="1440,180 1600,180 1520,270"/>
+    <polygon class="mesh-line" points="1600,180 1760,180 1680,270"/>
+    <polygon class="mesh-line" points="1760,180 1920,180 1840,270"/>
+    
+    <!-- Row 4 inverted -->
+    <polygon class="mesh-line" points="0,180 80,270 0,360"/>
+    <polygon class="mesh-line" points="80,270 160,180 160,360"/>
+    <polygon class="mesh-line" points="160,180 240,270 160,360"/>
+    <polygon class="mesh-line" points="240,270 320,180 320,360"/>
+    <polygon class="mesh-line" points="320,180 400,270 320,360"/>
+    <polygon class="mesh-line" points="400,270 480,180 480,360"/>
+    <polygon class="mesh-line" points="480,180 560,270 480,360"/>
+    <polygon class="mesh-line" points="560,270 640,180 640,360"/>
+    <polygon class="mesh-line" points="640,180 720,270 640,360"/>
+    <polygon class="mesh-line" points="720,270 800,180 800,360"/>
+    <polygon class="mesh-line" points="800,180 880,270 800,360"/>
+    <polygon class="mesh-line" points="880,270 960,180 960,360"/>
+    <polygon class="mesh-line" points="960,180 1040,270 960,360"/>
+    <polygon class="mesh-line" points="1040,270 1120,180 1120,360"/>
+    <polygon class="mesh-line" points="1120,180 1200,270 1120,360"/>
+    <polygon class="mesh-line" points="1200,270 1280,180 1280,360"/>
+    <polygon class="mesh-line" points="1280,180 1360,270 1280,360"/>
+    <polygon class="mesh-line" points="1360,270 1440,180 1440,360"/>
+    <polygon class="mesh-line" points="1440,180 1520,270 1440,360"/>
+    <polygon class="mesh-line" points="1520,270 1600,180 1600,360"/>
+    <polygon class="mesh-line" points="1600,180 1680,270 1600,360"/>
+    <polygon class="mesh-line" points="1680,270 1760,180 1760,360"/>
+    <polygon class="mesh-line" points="1760,180 1840,270 1760,360"/>
+    <polygon class="mesh-line" points="1840,270 1920,180 1920,360"/>
+    
+    <!-- Row 5 -->
+    <polygon class="mesh-line" points="0,360 160,360 80,450"/>
+    <polygon class="mesh-line" points="160,360 320,360 240,450"/>
+    <polygon class="mesh-line" points="320,360 480,360 400,450"/>
+    <polygon class="mesh-line" points="480,360 640,360 560,450"/>
+    <polygon class="mesh-line" points="640,360 800,360 720,450"/>
+    <polygon class="mesh-line" points="800,360 960,360 880,450"/>
+    <polygon class="mesh-line" points="960,360 1120,360 1040,450"/>
+    <polygon class="mesh-line" points="1120,360 1280,360 1200,450"/>
+    <polygon class="mesh-line" points="1280,360 1440,360 1360,450"/>
+    <polygon class="mesh-line" points="1440,360 1600,360 1520,450"/>
+    <polygon class="mesh-line" points="1600,360 1760,360 1680,450"/>
+    <polygon class="mesh-line" points="1760,360 1920,360 1840,450"/>
+    
+    <!-- Row 6 inverted -->
+    <polygon class="mesh-line" points="0,360 80,450 0,540"/>
+    <polygon class="mesh-line" points="80,450 160,360 160,540"/>
+    <polygon class="mesh-line" points="160,360 240,450 160,540"/>
+    <polygon class="mesh-line" points="240,450 320,360 320,540"/>
+    <polygon class="mesh-line" points="320,360 400,450 320,540"/>
+    <polygon class="mesh-line" points="400,450 480,360 480,540"/>
+    <polygon class="mesh-line" points="480,360 560,450 480,540"/>
+    <polygon class="mesh-line" points="560,450 640,360 640,540"/>
+    <polygon class="mesh-line" points="640,360 720,450 640,540"/>
+    <polygon class="mesh-line" points="720,450 800,360 800,540"/>
+    <polygon class="mesh-line" points="800,360 880,450 800,540"/>
+    <polygon class="mesh-line" points="880,450 960,360 960,540"/>
+    <polygon class="mesh-line" points="960,360 1040,450 960,540"/>
+    <polygon class="mesh-line" points="1040,450 1120,360 1120,540"/>
+    <polygon class="mesh-line" points="1120,360 1200,450 1120,540"/>
+    <polygon class="mesh-line" points="1200,450 1280,360 1280,540"/>
+    <polygon class="mesh-line" points="1280,360 1360,450 1280,540"/>
+    <polygon class="mesh-line" points="1360,450 1440,360 1440,540"/>
+    <polygon class="mesh-line" points="1440,360 1520,450 1440,540"/>
+    <polygon class="mesh-line" points="1520,450 1600,360 1600,540"/>
+    <polygon class="mesh-line" points="1600,360 1680,450 1600,540"/>
+    <polygon class="mesh-line" points="1680,450 1760,360 1760,540"/>
+    <polygon class="mesh-line" points="1760,360 1840,450 1760,540"/>
+    <polygon class="mesh-line" points="1840,450 1920,360 1920,540"/>
+    
+    <!-- Row 7 -->
+    <polygon class="mesh-line" points="0,540 160,540 80,630"/>
+    <polygon class="mesh-line" points="160,540 320,540 240,630"/>
+    <polygon class="mesh-line" points="320,540 480,540 400,630"/>
+    <polygon class="mesh-line" points="480,540 640,540 560,630"/>
+    <polygon class="mesh-line" points="640,540 800,540 720,630"/>
+    <polygon class="mesh-line" points="800,540 960,540 880,630"/>
+    <polygon class="mesh-line" points="960,540 1120,540 1040,630"/>
+    <polygon class="mesh-line" points="1120,540 1280,540 1200,630"/>
+    <polygon class="mesh-line" points="1280,540 1440,540 1360,630"/>
+    <polygon class="mesh-line" points="1440,540 1600,540 1520,630"/>
+    <polygon class="mesh-line" points="1600,540 1760,540 1680,630"/>
+    <polygon class="mesh-line" points="1760,540 1920,540 1840,630"/>
+    
+    <!-- Row 8 inverted -->
+    <polygon class="mesh-line" points="0,540 80,630 0,720"/>
+    <polygon class="mesh-line" points="80,630 160,540 160,720"/>
+    <polygon class="mesh-line" points="160,540 240,630 160,720"/>
+    <polygon class="mesh-line" points="240,630 320,540 320,720"/>
+    <polygon class="mesh-line" points="320,540 400,630 320,720"/>
+    <polygon class="mesh-line" points="400,630 480,540 480,720"/>
+    <polygon class="mesh-line" points="480,540 560,630 480,720"/>
+    <polygon class="mesh-line" points="560,630 640,540 640,720"/>
+    <polygon class="mesh-line" points="640,540 720,630 640,720"/>
+    <polygon class="mesh-line" points="720,630 800,540 800,720"/>
+    <polygon class="mesh-line" points="800,540 880,630 800,720"/>
+    <polygon class="mesh-line" points="880,630 960,540 960,720"/>
+    <polygon class="mesh-line" points="960,540 1040,630 960,720"/>
+    <polygon class="mesh-line" points="1040,630 1120,540 1120,720"/>
+    <polygon class="mesh-line" points="1120,540 1200,630 1120,720"/>
+    <polygon class="mesh-line" points="1200,630 1280,540 1280,720"/>
+    <polygon class="mesh-line" points="1280,540 1360,630 1280,720"/>
+    <polygon class="mesh-line" points="1360,630 1440,540 1440,720"/>
+    <polygon class="mesh-line" points="1440,540 1520,630 1440,720"/>
+    <polygon class="mesh-line" points="1520,630 1600,540 1600,720"/>
+    <polygon class="mesh-line" points="1600,540 1680,630 1600,720"/>
+    <polygon class="mesh-line" points="1680,630 1760,540 1760,720"/>
+    <polygon class="mesh-line" points="1760,540 1840,630 1760,720"/>
+    <polygon class="mesh-line" points="1840,630 1920,540 1920,720"/>
+    
+    <!-- Row 9 -->
+    <polygon class="mesh-line" points="0,720 160,720 80,810"/>
+    <polygon class="mesh-line" points="160,720 320,720 240,810"/>
+    <polygon class="mesh-line" points="320,720 480,720 400,810"/>
+    <polygon class="mesh-line" points="480,720 640,720 560,810"/>
+    <polygon class="mesh-line" points="640,720 800,720 720,810"/>
+    <polygon class="mesh-line" points="800,720 960,720 880,810"/>
+    <polygon class="mesh-line" points="960,720 1120,720 1040,810"/>
+    <polygon class="mesh-line" points="1120,720 1280,720 1200,810"/>
+    <polygon class="mesh-line" points="1280,720 1440,720 1360,810"/>
+    <polygon class="mesh-line" points="1440,720 1600,720 1520,810"/>
+    <polygon class="mesh-line" points="1600,720 1760,720 1680,810"/>
+    <polygon class="mesh-line" points="1760,720 1920,720 1840,810"/>
+    
+    <!-- Row 10 inverted -->
+    <polygon class="mesh-line" points="0,720 80,810 0,900"/>
+    <polygon class="mesh-line" points="80,810 160,720 160,900"/>
+    <polygon class="mesh-line" points="160,720 240,810 160,900"/>
+    <polygon class="mesh-line" points="240,810 320,720 320,900"/>
+    <polygon class="mesh-line" points="320,720 400,810 320,900"/>
+    <polygon class="mesh-line" points="400,810 480,720 480,900"/>
+    <polygon class="mesh-line" points="480,720 560,810 480,900"/>
+    <polygon class="mesh-line" points="560,810 640,720 640,900"/>
+    <polygon class="mesh-line" points="640,720 720,810 640,900"/>
+    <polygon class="mesh-line" points="720,810 800,720 800,900"/>
+    <polygon class="mesh-line" points="800,720 880,810 800,900"/>
+    <polygon class="mesh-line" points="880,810 960,720 960,900"/>
+    <polygon class="mesh-line" points="960,720 1040,810 960,900"/>
+    <polygon class="mesh-line" points="1040,810 1120,720 1120,900"/>
+    <polygon class="mesh-line" points="1120,720 1200,810 1120,900"/>
+    <polygon class="mesh-line" points="1200,810 1280,720 1280,900"/>
+    <polygon class="mesh-line" points="1280,720 1360,810 1280,900"/>
+    <polygon class="mesh-line" points="1360,810 1440,720 1440,900"/>
+    <polygon class="mesh-line" points="1440,720 1520,810 1440,900"/>
+    <polygon class="mesh-line" points="1520,810 1600,720 1600,900"/>
+    <polygon class="mesh-line" points="1600,720 1680,810 1600,900"/>
+    <polygon class="mesh-line" points="1680,810 1760,720 1760,900"/>
+    <polygon class="mesh-line" points="1760,720 1840,810 1760,900"/>
+    <polygon class="mesh-line" points="1840,810 1920,720 1920,900"/>
+    
+    <!-- Row 11 -->
+    <polygon class="mesh-line" points="0,900 160,900 80,990"/>
+    <polygon class="mesh-line" points="160,900 320,900 240,990"/>
+    <polygon class="mesh-line" points="320,900 480,900 400,990"/>
+    <polygon class="mesh-line" points="480,900 640,900 560,990"/>
+    <polygon class="mesh-line" points="640,900 800,900 720,990"/>
+    <polygon class="mesh-line" points="800,900 960,900 880,990"/>
+    <polygon class="mesh-line" points="960,900 1120,900 1040,990"/>
+    <polygon class="mesh-line" points="1120,900 1280,900 1200,990"/>
+    <polygon class="mesh-line" points="1280,900 1440,900 1360,990"/>
+    <polygon class="mesh-line" points="1440,900 1600,900 1520,990"/>
+    <polygon class="mesh-line" points="1600,900 1760,900 1680,990"/>
+    <polygon class="mesh-line" points="1760,900 1920,900 1840,990"/>
+    
+    <!-- Row 12 inverted (bottom) -->
+    <polygon class="mesh-line" points="0,900 80,990 0,1080"/>
+    <polygon class="mesh-line" points="80,990 160,900 160,1080"/>
+    <polygon class="mesh-line" points="160,900 240,990 160,1080"/>
+    <polygon class="mesh-line" points="240,990 320,900 320,1080"/>
+    <polygon class="mesh-line" points="320,900 400,990 320,1080"/>
+    <polygon class="mesh-line" points="400,990 480,900 480,1080"/>
+    <polygon class="mesh-line" points="480,900 560,990 480,1080"/>
+    <polygon class="mesh-line" points="560,990 640,900 640,1080"/>
+    <polygon class="mesh-line" points="640,900 720,990 640,1080"/>
+    <polygon class="mesh-line" points="720,990 800,900 800,1080"/>
+    <polygon class="mesh-line" points="800,900 880,990 800,1080"/>
+    <polygon class="mesh-line" points="880,990 960,900 960,1080"/>
+    <polygon class="mesh-line" points="960,900 1040,990 960,1080"/>
+    <polygon class="mesh-line" points="1040,990 1120,900 1120,1080"/>
+    <polygon class="mesh-line" points="1120,900 1200,990 1120,1080"/>
+    <polygon class="mesh-line" points="1200,990 1280,900 1280,1080"/>
+    <polygon class="mesh-line" points="1280,900 1360,990 1280,1080"/>
+    <polygon class="mesh-line" points="1360,990 1440,900 1440,1080"/>
+    <polygon class="mesh-line" points="1440,900 1520,990 1440,1080"/>
+    <polygon class="mesh-line" points="1520,990 1600,900 1600,1080"/>
+    <polygon class="mesh-line" points="1600,900 1680,990 1600,1080"/>
+    <polygon class="mesh-line" points="1680,990 1760,900 1760,1080"/>
+    <polygon class="mesh-line" points="1760,900 1840,990 1760,1080"/>
+    <polygon class="mesh-line" points="1840,990 1920,900 1920,1080"/>
+  </g>
+</svg>
