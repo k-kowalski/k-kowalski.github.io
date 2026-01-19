@@ -15,39 +15,37 @@
     <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
     </filter>
+    
+    <mask id="mesh-mask">
+      <!-- Glow spots used as opacity mask -->
+      <g filter="url(#blur)">
+        <circle cx="200" cy="200" r="100" fill="white" opacity="0">
+          <animate attributeName="opacity" values="0;1;0" dur="8s" repeatCount="indefinite" begin="0s" />
+          <animate attributeName="cx" values="200;300;200" dur="20s" repeatCount="indefinite" />
+        </circle>
+        
+        <circle cx="1600" cy="900" r="120" fill="white" opacity="0">
+          <animate attributeName="opacity" values="0;1;0" dur="11s" repeatCount="indefinite" begin="2s" />
+        </circle>
+        
+        <circle cx="960" cy="540" r="150" fill="white" opacity="0">
+          <animate attributeName="opacity" values="0;1;0;1;0" dur="15s" repeatCount="indefinite" begin="5s" />
+        </circle>
+        
+        <circle cx="1500" cy="300" r="180" fill="white" opacity="0">
+          <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite" begin="1s" />
+        </circle>
+        
+        <circle cx="400" cy="800" r="90" fill="white" opacity="0">
+          <animate attributeName="opacity" values="0;1;0" dur="13s" repeatCount="indefinite" begin="3s" />
+          <animate attributeName="cy" values="800;700;800" dur="25s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </mask>
   </defs>
   
-  <!-- Subtle animated glow spots -->
-  <g class="glow-layer">
-    <!-- Spot 1: Top left drifting -->
-    <circle cx="200" cy="200" r="100" class="glow-spot">
-      <animate attributeName="opacity" values="0;0.15;0" dur="8s" repeatCount="indefinite" begin="0s" />
-      <animate attributeName="cx" values="200;300;200" dur="20s" repeatCount="indefinite" />
-    </circle>
-    
-    <!-- Spot 2: Bottom right pulsing -->
-    <circle cx="1600" cy="900" r="120" class="glow-spot">
-      <animate attributeName="opacity" values="0;0.12;0" dur="11s" repeatCount="indefinite" begin="2s" />
-    </circle>
-    
-    <!-- Spot 3: Center random flare -->
-    <circle cx="960" cy="540" r="150" class="glow-spot">
-      <animate attributeName="opacity" values="0;0.1;0;0.08;0" dur="15s" repeatCount="indefinite" begin="5s" />
-    </circle>
-    
-    <!-- Spot 4: Top right fast pulse -->
-    <circle cx="1500" cy="300" r="80" class="glow-spot">
-      <animate attributeName="opacity" values="0;0.1;0" dur="7s" repeatCount="indefinite" begin="1s" />
-    </circle>
-    
-    <!-- Spot 5: Bottom left slow drift -->
-    <circle cx="400" cy="800" r="90" class="glow-spot">
-      <animate attributeName="opacity" values="0;0.15;0" dur="13s" repeatCount="indefinite" begin="3s" />
-      <animate attributeName="cy" values="800;700;800" dur="25s" repeatCount="indefinite" />
-    </circle>
-  </g>
-
-  <g class="triangle-mesh">
+  <!-- Mesh with mask applied -->
+  <g class="triangle-mesh" mask="url(#mesh-mask)">
     <!-- Row 1 -->
     <polygon class="mesh-line" points="0,0 160,0 80,90"/>
     <polygon class="mesh-line" points="160,0 320,0 240,90"/>
