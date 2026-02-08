@@ -8,6 +8,13 @@
 
   // Check for reduced motion preference
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  
+  // Resolve hash targets safely by ID (avoids querySelector crashes on invalid selectors)
+  function getTargetFromHash(hash) {
+    if (!hash || hash === '#') return null;
+    const id = decodeURIComponent(hash.slice(1));
+    return id ? document.getElementById(id) : null;
+  }
 
   // Smooth scroll for anchor links (if not disabled)
   if (!prefersReducedMotion) {
@@ -16,7 +23,7 @@
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
         
-        const targetElement = document.querySelector(targetId);
+        const targetElement = getTargetFromHash(targetId);
         if (targetElement) {
           e.preventDefault();
           targetElement.scrollIntoView({
@@ -33,7 +40,7 @@
 
   // Handle hash navigation on page load (for project deep links)
   if (window.location.hash) {
-    const targetElement = document.querySelector(window.location.hash);
+    const targetElement = getTargetFromHash(window.location.hash);
     if (targetElement) {
       // Small delay to ensure page is fully loaded
       setTimeout(() => {

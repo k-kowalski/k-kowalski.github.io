@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects — Krzysztof Kowalski</title>
+    <title>Projects &mdash; Krzysztof Kowalski</title>
     <meta name="description"
-        content="Production rendering, tools, and geometry research — with a focus on shipping and real-world workflows.">
+        content="Production rendering, tools, and geometry research &mdash; with a focus on shipping and real-world workflows.">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Projects — Krzysztof Kowalski">
+    <meta property="og:title" content="Projects &mdash; Krzysztof Kowalski">
     <meta property="og:description"
-        content="Production rendering, tools, and geometry research — with a focus on shipping and real-world workflows.">
+        content="Production rendering, tools, and geometry research &mdash; with a focus on shipping and real-world workflows.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://k-kowalski.github.io/projects">
 
@@ -36,14 +36,11 @@
         <section class="hero" style="min-height: auto; padding: var(--space-16) 0 var(--space-8);">
             <div class="container">
                 <nav style="margin-bottom: var(--space-8);">
-                    <a href="index.html" class="btn btn--secondary" style="padding: var(--space-2) var(--space-4);">←
+                    <a href="index.html" class="btn btn--secondary"
+                        style="padding: var(--space-2) var(--space-4);">&larr;
                         Back to Home</a>
                 </nav>
-                <h1 class="hero__name fade-in" style="font-size: var(--text-4xl);">Biggest Projects</h1>
-                <p class="hero__intro fade-in" style="margin-bottom: 0;">
-                    Production rendering, tools, and geometry research — with a focus on shipping and real-world
-                    workflows.
-                </p>
+                <h1 class="hero__name fade-in" style="font-size: var(--text-4xl);">Highlighted Projects</h1>
             </div>
         </section>
 
@@ -51,250 +48,56 @@
         <section style="padding: var(--space-8) 0 var(--space-20);">
             <div class="container">
 
-                <!-- Project 1: Odyssey3D -->
-                <article class="project-full project-card--shade-1" id="odyssey3d">
+                <!-- Project: Differentiable Catmull-Clark -->
+                <article class="project-full project-card--shade-4" id="diff-catmull-clark">
                     <div class="project-full__header">
-                        <span class="project-full__emoji" aria-hidden="true">🖥️</span>
+                        <span class="project-full__emoji" aria-hidden="true">&#129504;</span>
                         <div class="project-full__title-group">
-                            <h2 class="project-full__title">Odyssey3D — Glasses-Free Stereoscopic Rendering</h2>
-                            <p class="project-full__role">Rendering / engine integration / graphics debugging</p>
+                            <h2 class="project-full__title">Differentiable Catmull-Clark</h2>
                         </div>
                     </div>
                     <p class="project-full__summary">
-                        Rendering architecture and integration work for a glasses-free stereoscopic display pipeline,
-                        with a strong focus on production stability and performance.
+                        This project turns Catmull-Clark subdivision into a differentiable layer and uses it to fit a
+                        coarse control cage so that its subdivided surface matches a target mesh.
                     </p>
 
-                    <h4 class="project-full__section-title">Impact & Deliverables</h4>
+                    <h4 class="project-full__section-title">Impact &amp; Deliverables</h4>
                     <ul class="project-full__list">
-                        <li>Engine- and middleware-level rendering work supporting stereo/multi-view workflows</li>
-                        <li>Diagnosed rendering issues using frame captures and GPU tooling; built internal/custom
-                            debugging utilities</li>
-                        <li>Supported partner studios with integration, technical guidance, and production-ready demos
+                        <li>Catmull-Clark subdivision as a differentiable operator for inverse geometry problems</li>
+                        <li>Sample-based matching with symmetric Chamfer distance for topology-agnostic fitting</li>
+                        <li>Regularizers: Laplacian smoothing, edge-length preservation, anchor-to-init, point-to-plane
                         </li>
-                        <li>Worked in real gamedev pipelines with QA, engineers, and artists</li>
+                        <li>Realtime browser demo that runs end-to-end optimization with TensorFlow.js autodiff</li>
                     </ul>
 
                     <h4 class="project-full__section-title">Tech Stack</h4>
                     <div class="project-full__tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">DirectX</span>
-                        <span class="tech-tag">HLSL</span>
-                        <span class="tech-tag">RHI</span>
-                        <span class="tech-tag">RenderDoc</span>
-                        <span class="tech-tag">Nsight</span>
-                        <span class="tech-tag">PIX</span>
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">Perforce</span>
-                    </div>
-
-                    <div class="screenshot-placeholder">
-                        <span class="screenshot-placeholder__icon">📸</span>
-                        <span>Stereo rendering / capture coming soon</span>
-                    </div>
-                </article>
-
-                <!-- Project 2: Real-Time Rendering Features -->
-                <article class="project-full project-card--shade-2" id="rendering-features">
-                    <div class="project-full__header">
-                        <span class="project-full__emoji" aria-hidden="true">🎮</span>
-                        <div class="project-full__title-group">
-                            <h2 class="project-full__title">Real-Time Rendering Features Pack</h2>
-                            <p class="project-full__role">Rendering engineer (implementation + optimization)</p>
-                        </div>
-                    </div>
-                    <p class="project-full__summary">
-                        A set of production-grade real-time rendering systems developed and debugged in engine
-                        codebases.
-                    </p>
-
-                    <h4 class="project-full__section-title">Examples of Work</h4>
-                    <ul class="project-full__list">
-                        <li>Instanced Virtual Textures</li>
-                        <li>Volumetric Fog</li>
-                        <li>Multi-threaded / GPU compositing and UI/texture pipelines</li>
-                        <li>Performance profiling and regression diagnosis</li>
-                    </ul>
-
-                    <p style="color: var(--color-text-secondary); margin-top: var(--space-4); font-style: italic;">
-                        What I like here: hard constraints, frame time budgets, correctness across content.
-                    </p>
-
-                    <h4 class="project-full__section-title">Tech Stack</h4>
-                    <div class="project-full__tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">HLSL</span>
-                        <span class="tech-tag">GPU Profiling</span>
-                        <span class="tech-tag">Frame Captures</span>
-                        <span class="tech-tag">Multi-threading</span>
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">Perforce</span>
-                    </div>
-
-                    <div class="screenshot-placeholder">
-                        <span class="screenshot-placeholder__icon">📸</span>
-                        <span>Feature screenshots coming soon</span>
-                    </div>
-                </article>
-
-                <!-- Project 3: HoudiniFX Tool -->
-                <article class="project-full project-card--shade-3" id="vector-heat-method">
-                    <div class="project-full__header">
-                        <span class="project-full__emoji" aria-hidden="true">🧰</span>
-                        <div class="project-full__title-group">
-                            <h2 class="project-full__title">HoudiniFX Tool — Artist-Guided Vector Heat Method</h2>
-                            <p class="project-full__role">Geometry / tooling / tech art</p>
-                        </div>
-                    </div>
-                    <p class="project-full__summary">
-                        A practical geometry-processing tool built for artist workflows, focused on controllability and
-                        real production usage inside HoudiniFX.
-                    </p>
-
-                    <h4 class="project-full__section-title">Impact & Deliverables</h4>
-                    <ul class="project-full__list">
-                        <li>Implemented vector-field–driven method with artist-facing controls and predictable behavior
-                        </li>
-                        <li>Designed the tool around iteration speed and usability (not just algorithmic novelty)</li>
-                        <li>Used as a bridge between geometry research and real content creation workflows</li>
-                    </ul>
-
-                    <h4 class="project-full__section-title">Tech Stack</h4>
-                    <div class="project-full__tech">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">HoudiniFX</span>
-                        <span class="tech-tag">HDK</span>
-                        <span class="tech-tag">Geometry Processing</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-
-                    <div class="screenshot-placeholder">
-                        <span class="screenshot-placeholder__icon">📸</span>
-                        <span>Tool UI / examples coming soon</span>
-                    </div>
-                </article>
-
-                <!-- Project 4: Differentiable Catmull-Clark -->
-                <article class="project-full project-card--shade-4" id="diff-catmul-clark">
-                    <div class="project-full__header">
-                        <span class="project-full__emoji" aria-hidden="true">🧠</span>
-                        <div class="project-full__title-group">
-                            <h2 class="project-full__title">Differentiable Catmull-Clark Subdivision</h2>
-                            <p class="project-full__role">Research engineering (geometry + ML frameworks)</p>
-                        </div>
-                    </div>
-                    <p class="project-full__summary">
-                        Differentiable implementation of subdivision, built to enable optimization and learning-based
-                        workflows on mesh geometry.
-                    </p>
-
-                    <h4 class="project-full__section-title">Impact & Deliverables</h4>
-                    <ul class="project-full__list">
-                        <li>Implemented subdivision in a differentiable setting to optimize geometry via objective
-                            functions</li>
-                        <li>Focused on correctness, gradients, and practical integration into experiments</li>
-                        <li>Useful foundation for differentiable geometry pipelines and tool prototypes</li>
-                    </ul>
-
-                    <h4 class="project-full__section-title">Tech Stack</h4>
-                    <div class="project-full__tech">
-                        <span class="tech-tag">Python</span>
                         <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">TensorFlow.js</span>
                         <span class="tech-tag">Geometry Processing</span>
-                        <span class="tech-tag">Numerical Optimization</span>
+                        <span class="tech-tag">Differentiable Graphics</span>
+                        <span class="tech-tag">Mathematical Optimization</span>
                     </div>
 
-                    <div class="screenshot-placeholder">
-                        <span class="screenshot-placeholder__icon">📸</span>
-                        <span>Visualization / diagrams coming soon</span>
-                    </div>
-                </article>
-
-                <!-- Project 5: Terrain Creator -->
-                <article class="project-full project-card--shade-5" id="terrain-creator">
-                    <div class="project-full__header">
-                        <span class="project-full__emoji" aria-hidden="true">🧪</span>
-                        <div class="project-full__title-group">
-                            <h2 class="project-full__title">Deep Learning Based Terrain Creator</h2>
-                            <p class="project-full__role">Applied ML + content creation tooling</p>
-                        </div>
-                    </div>
-                    <p class="project-full__summary">
-                        Terrain synthesis tool combining procedural methods and ML, designed as an artist-facing
-                        workflow.
-                    </p>
-
-                    <h4 class="project-full__section-title">Impact & Deliverables</h4>
-                    <ul class="project-full__list">
-                        <li>Built a workflow that turns high-level intent into usable terrain output</li>
-                        <li>Focused on "tool usefulness" rather than model novelty</li>
-                        <li>Strong overlap with game content pipelines</li>
-                    </ul>
-
-                    <h4 class="project-full__section-title">Tech Stack</h4>
-                    <div class="project-full__tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">ML Stack</span>
-                        <span class="tech-tag">Procedural Methods</span>
-                        <span class="tech-tag">Unity Integration</span>
-                    </div>
-
-                    <div class="screenshot-placeholder">
-                        <span class="screenshot-placeholder__icon">📸</span>
-                        <span>Terrain outputs coming soon</span>
+                    <div style="margin-top: var(--space-6);">
+                        <a class="btn btn--secondary btn--project-link" href="https://k-kowalski.github.io/diff-cc"
+                            target="_blank" rel="noopener noreferrer">Open project page</a>
                     </div>
                 </article>
-
-                <!-- Project 6: Teaching & Supervising -->
-                <article class="project-full project-card--shade-6" id="university-work">
-                    <div class="project-full__header">
-                        <span class="project-full__emoji" aria-hidden="true">🧰</span>
-                        <div class="project-full__title-group">
-                            <h2 class="project-full__title">Teaching & Supervising Real-Time Graphics + Tech Art</h2>
-                            <p class="project-full__role">Assistant Professor / supervisor / tech art mentor</p>
-                        </div>
-                    </div>
-                    <p class="project-full__summary">
-                        Several years of teaching and supervising real-time graphics, game development, and technical
-                        art projects — effectively acting as product engineer for student "users".
-                    </p>
-
-                    <h4 class="project-full__section-title">What This Demonstrates</h4>
-                    <ul class="project-full__list">
-                        <li>Designing workflows that beginners can successfully use (developer experience mindset)</li>
-                        <li>Scoping projects to shippable outcomes under constraints</li>
-                        <li>Bridging engineering with artists/designers and real-time tools</li>
-                        <li>Practical pipelines: Houdini, photogrammetry, mocap, VR, Unity/Unreal prototyping</li>
-                    </ul>
-
-                    <h4 class="project-full__section-title">Tech Stack</h4>
-                    <div class="project-full__tech">
-                        <span class="tech-tag">Unity</span>
-                        <span class="tech-tag">Unreal Engine</span>
-                        <span class="tech-tag">HoudiniFX</span>
-                        <span class="tech-tag">Real-time Rendering</span>
-                        <span class="tech-tag">Pipelines</span>
-                        <span class="tech-tag">Mentorship</span>
-                    </div>
-
-                    <div class="screenshot-placeholder">
-                        <span class="screenshot-placeholder__icon">📸</span>
-                        <span>Student project highlights coming soon</span>
-                    </div>
+                <article class="project-full project-card--shade-4">
+                    <span class="project-full__emoji" aria-hidden="true">&#128165;</span>
+                    More coming soon...
                 </article>
 
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="container">
+                        <p class="footer__text">&copy; 2026 Krzysztof Kowalski. All rights reserved.</p>
+                    </div>
+                </footer>
             </div>
-        </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p class="footer__text">© 2026 Krzysztof Kowalski. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
-
-    <script src="assets/main.js" defer></script>
+            <script src="assets/main.js" defer></script>
 </body>
 
 </html>

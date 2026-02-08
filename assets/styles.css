@@ -269,6 +269,26 @@ section {
   color: var(--color-text-primary);
 }
 
+.btn--project-link {
+  width: 100%;
+  justify-content: center;
+  border-color: var(--color-accent);
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.03) 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(3, 241, 35, 0.87),
+    0 0 0 1px rgba(139, 92, 246, 0.2),
+    0 0 18px rgba(139, 92, 246, 0.2);
+}
+
+.btn--project-link:hover {
+  border-color: var(--color-accent-hover);
+  background: linear-gradient(90deg, rgba(167, 139, 250, 0.15) 0%, rgba(167, 139, 250, 0.05) 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(167, 139, 250, 0.55),
+    0 0 0 1px rgba(167, 139, 250, 0.25),
+    0 0 20px rgba(167, 139, 250, 0.28);
+}
+
 /* --------------------------------------------------------------------------
    Section Headers
    -------------------------------------------------------------------------- */
@@ -471,10 +491,10 @@ section {
 }
 
 .project-full__list li::before {
-  content: "→";
+  content: "\1F53A";
   position: absolute;
   left: 0;
-  color: var(--color-accent);
+  color: #ef4444;
 }
 
 .project-full__tech {
