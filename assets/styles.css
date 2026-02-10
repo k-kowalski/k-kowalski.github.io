@@ -69,10 +69,10 @@
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
 
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 400ms ease;
+  /* Transitions - Disabled for performance */
+  --transition-fast: 0s;
+  --transition-base: 0s;
+  --transition-slow: 0s;
 }
 
 /* --------------------------------------------------------------------------
@@ -87,21 +87,38 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+  /* Disabled smooth scroll for performance/instant jump */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
 
 body {
   font-family: var(--font-sans);
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   color: var(--color-text-primary);
-  /* Dark overlay for readability + bg.png */
-  background: linear-gradient(rgba(10, 10, 18, 0.85), rgba(18, 16, 31, 0.9)), url('bg.png') no-repeat center center fixed;
-  background-size: cover;
   background-color: var(--color-bg-start);
   min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2;
+  /* Dark overlay for readability + bg.png */
+  background: linear-gradient(rgba(10, 10, 18, 0.85), rgba(18, 16, 31, 0.9)), url('bg.png') no-repeat center center;
+  background-size: cover;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Triangle mesh background overlay */
@@ -114,6 +131,8 @@ body {
   pointer-events: none;
   z-index: 0;
   opacity: 1.0;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Main content wrapper */
@@ -181,6 +200,7 @@ a:hover {
   backdrop-filter: blur(8px);
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--color-border);
+  transform: translateZ(0);
 }
 
 section {
@@ -326,6 +346,7 @@ section {
   padding: var(--space-4);
   border-radius: var(--border-radius-md);
   transition: background var(--transition-base);
+  transform: translateZ(0);
 }
 
 .highlight-item:hover {
@@ -341,6 +362,58 @@ section {
   font-size: var(--text-base);
   color: var(--color-text-secondary);
   line-height: var(--leading-normal);
+}
+
+/* Best of shipped work: list layout + golden card outline */
+.highlights--shipped-work .highlights__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.highlights--shipped-work .highlight-item {
+  flex-direction: column;
+  gap: var(--space-2);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.03) 100%);
+  box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.14);
+}
+
+.highlights--shipped-work .highlight-item:hover {
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.14) 0%, rgba(212, 175, 55, 0.05) 100%);
+  border-color: rgba(245, 212, 105, 0.9);
+  box-shadow: 0 0 0 1px rgba(245, 212, 105, 0.5), 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.highlights--shipped-work .highlight-item__emoji {
+  font-size: var(--text-xl);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.highlights--shipped-work .highlight-item p,
+.highlights--shipped-work .highlight-item a {
+  overflow-wrap: anywhere;
+}
+
+.highlights--shipped-work .highlight-item__title {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: #f8e9b6;
+  font-weight: 600;
+}
+
+.highlights--shipped-work .highlight-item__link {
+  display: inline-block;
+  color: #d4af37;
+  font-size: var(--text-sm);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.highlights--shipped-work .highlight-item__link:hover {
+  color: #f5d469;
 }
 
 /* --------------------------------------------------------------------------
@@ -360,6 +433,7 @@ section {
   transition: all var(--transition-base);
   text-decoration: none;
   display: block;
+  transform: translateZ(0);
 }
 
 .project-card:hover {
@@ -427,6 +501,7 @@ section {
   padding: var(--space-8);
   margin-bottom: var(--space-8);
   transition: border-color var(--transition-base);
+  transform: translateZ(0);
 }
 
 .project-full:hover {
@@ -570,7 +645,7 @@ section {
   gap: var(--space-2);
   color: var(--color-text-secondary);
   font-size: var(--text-base);
-  transition: color var(--transition-fast);
+  transition: none;
 }
 
 .contact__link:hover {
@@ -663,19 +738,10 @@ section {
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: no-preference) {
   .fade-in {
-    animation: fadeIn var(--transition-slow) ease-out;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    /* Animation disabled for performance */
+    opacity: 1;
+    transform: none;
+    animation: none;
   }
 }
 
