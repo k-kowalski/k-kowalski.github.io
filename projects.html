@@ -41,6 +41,8 @@
                         Back to Home</a>
                 </nav>
                 <h1 class="hero__name fade-in" style="font-size: var(--text-4xl);">Highlighted Projects</h1>
+                <p class="hero__subtitle fade-in" style="font-size: var(--text-lg);">Curated selection of the things
+                    that are currently interesting to me.</p>
             </div>
         </section>
 
@@ -75,18 +77,56 @@
                         <span class="tech-tag">PyTorch</span>
                         <span class="tech-tag">TensorFlow.js</span>
                         <span class="tech-tag">Geometry Processing</span>
-                        <span class="tech-tag">Differentiable Graphics</span>
+                        <span class="tech-tag">Differentiable Geometry</span>
                         <span class="tech-tag">Mathematical Optimization</span>
                     </div>
 
                     <div style="margin-top: var(--space-6);">
-                        <a class="btn btn--secondary btn--project-link" href="https://k-kowalski.github.io/diff-cc"
-                            >Open project page</a>
+                        <a class="btn btn--secondary btn--project-link" href="https://k-kowalski.github.io/diff-cc">Open
+                            project page</a>
+                    </div>
+                </article>
+
+                <!-- Project: Road Generator -->
+                <article class="project-full project-card--shade-5" id="road-generator">
+                    <div class="project-full__header">
+                        <span class="project-full__emoji" aria-hidden="true">🔀</span>
+                        <div class="project-full__title-group">
+                            <h2 class="project-full__title">Procedural Road Generator</h2>
+                        </div>
+                    </div>
+                    <p class="project-full__summary">
+                        Procedural road-building sandbox built around a shared C++ core for
+                        authoring polylines, refining them into clean road paths, solving for intersections, and
+                        generating meshes
+                        for interactive rendering.
+                    </p>
+
+                    <h4 class="project-full__section-title">Impact &amp; Deliverables</h4>
+                    <ul class="project-full__list">
+                        <li>Shared C++ geometry core used by both a native DirectX 12 app and a browser demo</li>
+                        <li>Interactive authoring workflow with powerful procedural impact driving geometry and shading.
+                        </li>
+                        <li>Focused on real-time performance and low-level control over the generation process.</li>
+                    </ul>
+
+                    <h4 class="project-full__section-title">Tech Stack</h4>
+                    <div class="project-full__tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">DirectX 12</span>
+                        <span class="tech-tag">WebAssembly</span>
+                        <span class="tech-tag">WebGPU</span>
+                        <span class="tech-tag">Geometry Processing</span>
+                    </div>
+
+                    <div style="margin-top: var(--space-6);">
+                        <a class="btn btn--secondary btn--project-link"
+                            href="https://k-kowalski.github.io/road_generator/">Open project page</a>
                     </div>
                 </article>
                 <article class="project-full project-card--shade-4">
                     <span class="project-full__emoji" aria-hidden="true">&#128165;</span>
-                    More coming soon...
+                    More coming...
                 </article>
 
                 <!-- Footer -->
