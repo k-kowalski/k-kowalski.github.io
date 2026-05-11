@@ -416,6 +416,88 @@ section {
   color: #f5d469;
 }
 
+/* Diamond list (shipped game titles) */
+.diamond-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+}
+
+.diamond-list li {
+  position: relative;
+  padding-left: 1.15em;
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+.diamond-list li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+  font-size: 0.65em;
+  top: 0.35em;
+}
+
+.diamond-list--games {
+  --game-list-icon-width: 2.35rem;
+  --game-list-icon-height: 1.15rem;
+}
+
+.diamond-list--games li {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: var(--space-2);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.diamond-list--games li::before {
+  display: none;
+}
+
+.diamond-list--games li:last-child {
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.diamond-list--games li:last-child::before {
+  display: none;
+}
+
+img.game-list-icon {
+  display: block;
+  inline-size: var(--game-list-icon-width);
+  block-size: var(--game-list-icon-height);
+  min-inline-size: var(--game-list-icon-width);
+  min-block-size: var(--game-list-icon-height);
+  max-inline-size: var(--game-list-icon-width);
+  max-block-size: var(--game-list-icon-height);
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 769px) {
+  .diamond-list--games {
+    --game-list-icon-width: 5.65rem;
+    --game-list-icon-height: 3.2rem;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Project Cards (Teaser - Home)
    -------------------------------------------------------------------------- */
