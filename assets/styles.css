@@ -43,7 +43,7 @@
   --text-2xl: 1.5rem;
   --text-3xl: 2rem;
   --text-4xl: 2.5rem;
-  --text-5xl: 3.5rem;
+  --text-5xl: 3.25rem;
 
   --leading-tight: 1.25;
   --leading-normal: 1.6;
@@ -758,7 +758,7 @@ img.game-list-icon {
    -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   :root {
-    --text-5xl: 2.5rem;
+    --text-5xl: 2.35rem;
     --text-3xl: 1.75rem;
   }
 
@@ -804,7 +804,7 @@ img.game-list-icon {
 
 @media (max-width: 480px) {
   :root {
-    --text-5xl: 2rem;
+    --text-5xl: 1.9rem;
     --text-3xl: 1.5rem;
     --text-2xl: 1.25rem;
   }
